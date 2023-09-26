@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<hibernate-configuration xmlns="http://www.hibernate.org/xsd/orm/cfg">
+    <session-factory>
+        <property name="connection.driver.class">com.mysql.cj.jdbc.Driver</property>
+
+        <property name="connection.url">jdbc:mysql://localhost:3306/TestingSystem</property>
+
+        <property name="connection.user">root</property>
+        <property name="connection.password">K3764tuoi10</property>
+
+        <property name="show_sql">true</property>
+        <property name="hibernate.format_sql">true</property>
+        <property name="connection.pool_size">10</property>
+        
+        
+        <property name="hibernate.hbm2ddl.auto">create-drop</property>
+        <property name="hibernate.connection.characterEncoding">utf8</property>
+        <property name="hibernate.dialect">org.hibernate.dialect.MySQL8Dialect</property>
+    </session-factory>
+</hibernate-configuration>
